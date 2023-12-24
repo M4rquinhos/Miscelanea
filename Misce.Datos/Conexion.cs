@@ -9,32 +9,44 @@ namespace Misce.Datos
 {
     public class Conexion
     {
+        private string bd;
+        private string servidor;
+        private string usuario = "";
+        private string clave = "";
+        private bool seguridad;
         private static Conexion con = null;
-
-        //cadena de conexion
 
         private Conexion()
         {
-
+            this.bd = "MISCELANEA";
+            this.servidor = "DESKTOP-TBL2D3P\\SQLEXPRESS";
+            this.usuario = "sistemas";
+            this.clave = "1234";
+            this.seguridad = true;
         }
 
         public SqlConnection CrearConexion()
         {
             SqlConnection cadena = new SqlConnection();
-
             try
             {
-                cadena.ConnectionString = "Data Source=DESKTOP-TBL2D3P\\SQLEXPRESS;Initial Catalog=MISCELANEA;Integrated Security=True";
+                cadena.ConnectionString = $"Server={this.servidor}; Database={this.bd}";
+                if (this.seguridad)
+                {
+                    cadena.ConnectionString = cadena.ConnectionString + $"Integrated Security = SSPI";
+                }
+                else
+                {
+                    cadena.ConnectionString = cadena.ConnectionString + $"User Id={this.usuario}; Password={this.clave}";
+                }
             }
             catch (Exception ex)
             {
-
                 cadena = null;
                 throw ex;
             }
             return cadena;
         }
-
 
         public static Conexion GetInstancia()
         {
