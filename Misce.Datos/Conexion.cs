@@ -1,9 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Data.SqlClient;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Misce.Datos
 {
@@ -11,8 +7,8 @@ namespace Misce.Datos
     {
         private string bd;
         private string servidor;
-        private string usuario = "";
-        private string clave = "";
+        private string usuario;
+        private string clave;
         private bool seguridad;
         private static Conexion con = null;
 
@@ -22,7 +18,7 @@ namespace Misce.Datos
             this.servidor = "DESKTOP-TBL2D3P\\SQLEXPRESS";
             this.usuario = "sistemas";
             this.clave = "1234";
-            this.seguridad = true;
+            this.seguridad = false;
         }
 
         public SqlConnection CrearConexion()
@@ -30,14 +26,14 @@ namespace Misce.Datos
             SqlConnection cadena = new SqlConnection();
             try
             {
-                cadena.ConnectionString = $"Server={this.servidor}; Database={this.bd}";
+                cadena.ConnectionString = $"Server={this.servidor}; Database={this.bd};";
                 if (this.seguridad)
                 {
-                    cadena.ConnectionString = cadena.ConnectionString + $"Integrated Security = SSPI";
+                    cadena.ConnectionString = cadena.ConnectionString + $"Integrated Security = SSPI;";
                 }
                 else
                 {
-                    cadena.ConnectionString = cadena.ConnectionString + $"User Id={this.usuario}; Password={this.clave}";
+                    cadena.ConnectionString = cadena.ConnectionString + $"User Id={this.usuario}; Password={this.clave};";
                 }
             }
             catch (Exception ex)

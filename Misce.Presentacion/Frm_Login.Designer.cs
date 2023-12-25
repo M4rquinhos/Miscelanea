@@ -32,25 +32,25 @@
             this.label1 = new System.Windows.Forms.Label();
             this.radPanel1 = new Telerik.WinControls.UI.RadPanel();
             this.radPanel2 = new Telerik.WinControls.UI.RadPanel();
-            this.radLabel1 = new Telerik.WinControls.UI.RadLabel();
-            this.radLabel2 = new Telerik.WinControls.UI.RadLabel();
-            this.btnIniciar = new Telerik.WinControls.UI.RadButton();
-            this.txtUsuario = new Telerik.WinControls.UI.RadTextBoxControl();
-            this.txtClave = new Telerik.WinControls.UI.RadTextBoxControl();
             this.pnlIcono = new Telerik.WinControls.UI.RadPanel();
             this.picIcono = new System.Windows.Forms.PictureBox();
+            this.txtClave = new Telerik.WinControls.UI.RadTextBoxControl();
+            this.txtUsuario = new Telerik.WinControls.UI.RadTextBoxControl();
+            this.btnIniciar = new Telerik.WinControls.UI.RadButton();
+            this.radLabel2 = new Telerik.WinControls.UI.RadLabel();
+            this.radLabel1 = new Telerik.WinControls.UI.RadLabel();
             ((System.ComponentModel.ISupportInitialize)(this.radPanel1)).BeginInit();
             this.radPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.radPanel2)).BeginInit();
             this.radPanel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.radLabel1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.radLabel2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btnIniciar)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtUsuario)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtClave)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pnlIcono)).BeginInit();
             this.pnlIcono.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picIcono)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtClave)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtUsuario)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnIniciar)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.radLabel2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.radLabel1)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -88,44 +88,6 @@
             this.radPanel2.Size = new System.Drawing.Size(615, 247);
             this.radPanel2.TabIndex = 4;
             // 
-            // radLabel1
-            // 
-            this.radLabel1.Location = new System.Drawing.Point(316, 56);
-            this.radLabel1.Name = "radLabel1";
-            this.radLabel1.Size = new System.Drawing.Size(47, 18);
-            this.radLabel1.TabIndex = 0;
-            this.radLabel1.Text = "Usuario:";
-            // 
-            // radLabel2
-            // 
-            this.radLabel2.Location = new System.Drawing.Point(316, 99);
-            this.radLabel2.Name = "radLabel2";
-            this.radLabel2.Size = new System.Drawing.Size(35, 18);
-            this.radLabel2.TabIndex = 1;
-            this.radLabel2.Text = "Clave:";
-            // 
-            // btnIniciar
-            // 
-            this.btnIniciar.Location = new System.Drawing.Point(395, 135);
-            this.btnIniciar.Name = "btnIniciar";
-            this.btnIniciar.Size = new System.Drawing.Size(160, 45);
-            this.btnIniciar.TabIndex = 4;
-            this.btnIniciar.Text = "Iniciar Sesión";
-            // 
-            // txtUsuario
-            // 
-            this.txtUsuario.Location = new System.Drawing.Point(397, 54);
-            this.txtUsuario.Name = "txtUsuario";
-            this.txtUsuario.Size = new System.Drawing.Size(158, 20);
-            this.txtUsuario.TabIndex = 5;
-            // 
-            // txtClave
-            // 
-            this.txtClave.Location = new System.Drawing.Point(397, 95);
-            this.txtClave.Name = "txtClave";
-            this.txtClave.Size = new System.Drawing.Size(158, 22);
-            this.txtClave.TabIndex = 6;
-            // 
             // pnlIcono
             // 
             this.pnlIcono.BackColor = System.Drawing.Color.Transparent;
@@ -145,6 +107,45 @@
             this.picIcono.TabIndex = 0;
             this.picIcono.TabStop = false;
             // 
+            // txtClave
+            // 
+            this.txtClave.Location = new System.Drawing.Point(397, 95);
+            this.txtClave.Name = "txtClave";
+            this.txtClave.Size = new System.Drawing.Size(158, 22);
+            this.txtClave.TabIndex = 6;
+            // 
+            // txtUsuario
+            // 
+            this.txtUsuario.Location = new System.Drawing.Point(397, 54);
+            this.txtUsuario.Name = "txtUsuario";
+            this.txtUsuario.Size = new System.Drawing.Size(158, 20);
+            this.txtUsuario.TabIndex = 5;
+            // 
+            // btnIniciar
+            // 
+            this.btnIniciar.Location = new System.Drawing.Point(395, 135);
+            this.btnIniciar.Name = "btnIniciar";
+            this.btnIniciar.Size = new System.Drawing.Size(160, 45);
+            this.btnIniciar.TabIndex = 4;
+            this.btnIniciar.Text = "Iniciar Sesión";
+            this.btnIniciar.Click += new System.EventHandler(this.btnIniciar_Click);
+            // 
+            // radLabel2
+            // 
+            this.radLabel2.Location = new System.Drawing.Point(316, 99);
+            this.radLabel2.Name = "radLabel2";
+            this.radLabel2.Size = new System.Drawing.Size(35, 18);
+            this.radLabel2.TabIndex = 1;
+            this.radLabel2.Text = "Clave:";
+            // 
+            // radLabel1
+            // 
+            this.radLabel1.Location = new System.Drawing.Point(316, 56);
+            this.radLabel1.Name = "radLabel1";
+            this.radLabel1.Size = new System.Drawing.Size(47, 18);
+            this.radLabel1.TabIndex = 0;
+            this.radLabel1.Text = "Usuario:";
+            // 
             // Frm_Login
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -161,15 +162,15 @@
             ((System.ComponentModel.ISupportInitialize)(this.radPanel2)).EndInit();
             this.radPanel2.ResumeLayout(false);
             this.radPanel2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.radLabel1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.radLabel2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btnIniciar)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtUsuario)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtClave)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pnlIcono)).EndInit();
             this.pnlIcono.ResumeLayout(false);
             this.pnlIcono.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picIcono)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtClave)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtUsuario)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnIniciar)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.radLabel2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.radLabel1)).EndInit();
             this.ResumeLayout(false);
 
         }
