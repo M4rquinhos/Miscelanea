@@ -113,6 +113,7 @@
             this.txtClave.Name = "txtClave";
             this.txtClave.Size = new System.Drawing.Size(158, 22);
             this.txtClave.TabIndex = 6;
+            this.txtClave.ThemeName = "ControlDefault";
             // 
             // txtUsuario
             // 
@@ -120,6 +121,7 @@
             this.txtUsuario.Name = "txtUsuario";
             this.txtUsuario.Size = new System.Drawing.Size(158, 20);
             this.txtUsuario.TabIndex = 5;
+            this.txtUsuario.ThemeName = "ControlDefault";
             // 
             // btnIniciar
             // 
