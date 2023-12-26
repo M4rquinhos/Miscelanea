@@ -5,10 +5,10 @@ namespace Misce.Negocio
 {
     public class NUsuario
     {
-        public static DataTable Acceder(string usuario, string clave, string estado)
+        public static DataTable Acceder(string usuario, string clave)
         {
             DUsuario datos = new DUsuario();
-            return datos.Acceder(usuario, clave, estado);
+            return datos.Acceder(usuario, clave);
         }
     }
 }

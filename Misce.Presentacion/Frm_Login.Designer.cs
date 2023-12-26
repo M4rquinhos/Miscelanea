@@ -128,6 +128,7 @@
             this.btnIniciar.Size = new System.Drawing.Size(160, 45);
             this.btnIniciar.TabIndex = 4;
             this.btnIniciar.Text = "Iniciar Sesión";
+            this.btnIniciar.ThemeName = "ControlDefault";
             this.btnIniciar.Click += new System.EventHandler(this.btnIniciar_Click);
             // 
             // radLabel2

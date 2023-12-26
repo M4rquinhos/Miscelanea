@@ -9,7 +9,7 @@ namespace Misce.Datos
     {
         public EUsuario usuario = new EUsuario();
 
-        public DataTable Acceder(string usuario, string clave, string estado)
+        public DataTable Acceder(string usuario, string clave)
         {
             DataTable tabla = new DataTable();
             try
@@ -21,13 +21,13 @@ namespace Misce.Datos
                         cmd.CommandType = CommandType.StoredProcedure;
                         cmd.Parameters.Add("@usuario", SqlDbType.VarChar).Value = usuario;
                         cmd.Parameters.Add("@clave", SqlDbType.VarChar).Value = clave;
-                        cmd.Parameters.Add("@estado", SqlDbType.VarChar).Value = estado;
+                        //cmd.Parameters.Add("@estado", SqlDbType.VarChar).Value = estado;
                         sqlCon.Open();
                         using (SqlDataReader resultado = cmd.ExecuteReader())
                         {
                             tabla.Load(resultado);
-                            return tabla;
                         }
+                        return tabla;
                     }
                 }
             }
