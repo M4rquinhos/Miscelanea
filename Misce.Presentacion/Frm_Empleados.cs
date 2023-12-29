@@ -16,5 +16,25 @@ namespace Misce.Presentacion
         {
             InitializeComponent();
         }
+
+        private void Frm_Empleados_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnGuardar_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnEliminarUsuario_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnCambiaEstado_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

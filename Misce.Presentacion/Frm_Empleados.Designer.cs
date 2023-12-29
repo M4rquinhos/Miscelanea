@@ -28,29 +28,31 @@
         /// </summary>
         private void InitializeComponent()
         {
-            Telerik.WinControls.UI.TableViewDefinition tableViewDefinition1 = new Telerik.WinControls.UI.TableViewDefinition();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Frm_Empleados));
+            Telerik.WinControls.UI.TableViewDefinition tableViewDefinition1 = new Telerik.WinControls.UI.TableViewDefinition();
             this.tabPrincipal = new System.Windows.Forms.TabControl();
             this.tabPFiltros = new System.Windows.Forms.TabPage();
+            this.radPanel1 = new Telerik.WinControls.UI.RadPanel();
             this.tabPInformacion = new System.Windows.Forms.TabPage();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.radGridView1 = new Telerik.WinControls.UI.RadGridView();
             this.toolStrip1 = new System.Windows.Forms.ToolStrip();
             this.btnAgregar = new System.Windows.Forms.ToolStripButton();
+            this.btnGuardar = new System.Windows.Forms.ToolStripButton();
+            this.btnCambiaEstado = new System.Windows.Forms.ToolStripButton();
             this.btnEliminarUsuario = new System.Windows.Forms.ToolStripButton();
-            this.btnDesactivar = new System.Windows.Forms.ToolStripButton();
+            this.radGridView1 = new Telerik.WinControls.UI.RadGridView();
             this.tabPrincipal.SuspendLayout();
-            this.tabPInformacion.SuspendLayout();
-            this.groupBox1.SuspendLayout();
+            this.tabPFiltros.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.radPanel1)).BeginInit();
+            this.toolStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.radGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.radGridView1.MasterTemplate)).BeginInit();
-            this.toolStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // tabPrincipal
             // 
             this.tabPrincipal.Controls.Add(this.tabPFiltros);
             this.tabPrincipal.Controls.Add(this.tabPInformacion);
+            this.tabPrincipal.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tabPrincipal.Location = new System.Drawing.Point(1, 75);
             this.tabPrincipal.Name = "tabPrincipal";
             this.tabPrincipal.SelectedIndex = 0;
@@ -59,58 +61,48 @@
             // 
             // tabPFiltros
             // 
-            this.tabPFiltros.Location = new System.Drawing.Point(4, 22);
+            this.tabPFiltros.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(203)))), ((int)(((byte)(218)))), ((int)(((byte)(213)))));
+            this.tabPFiltros.Controls.Add(this.radGridView1);
+            this.tabPFiltros.Controls.Add(this.radPanel1);
+            this.tabPFiltros.Location = new System.Drawing.Point(4, 25);
             this.tabPFiltros.Name = "tabPFiltros";
             this.tabPFiltros.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPFiltros.Size = new System.Drawing.Size(1449, 545);
+            this.tabPFiltros.Size = new System.Drawing.Size(1449, 542);
             this.tabPFiltros.TabIndex = 0;
-            this.tabPFiltros.Text = "Filtros";
-            this.tabPFiltros.UseVisualStyleBackColor = true;
+            this.tabPFiltros.Text = "Busqueda";
+            // 
+            // radPanel1
+            // 
+            this.radPanel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(215)))), ((int)(((byte)(90)))));
+            this.radPanel1.Location = new System.Drawing.Point(70, 29);
+            this.radPanel1.Name = "radPanel1";
+            this.radPanel1.Size = new System.Drawing.Size(641, 162);
+            this.radPanel1.TabIndex = 0;
+            this.radPanel1.ThemeName = "ControlDefault";
             // 
             // tabPInformacion
             // 
             this.tabPInformacion.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(203)))), ((int)(((byte)(218)))), ((int)(((byte)(213)))));
-            this.tabPInformacion.Controls.Add(this.groupBox1);
             this.tabPInformacion.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.tabPInformacion.Location = new System.Drawing.Point(4, 22);
+            this.tabPInformacion.Location = new System.Drawing.Point(4, 25);
             this.tabPInformacion.Name = "tabPInformacion";
             this.tabPInformacion.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPInformacion.Size = new System.Drawing.Size(1449, 578);
+            this.tabPInformacion.Size = new System.Drawing.Size(1449, 542);
             this.tabPInformacion.TabIndex = 1;
             this.tabPInformacion.Text = "Informacion";
-            // 
-            // groupBox1
-            // 
-            this.groupBox1.Controls.Add(this.radGridView1);
-            this.groupBox1.Location = new System.Drawing.Point(7, 6);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(1434, 565);
-            this.groupBox1.TabIndex = 0;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "groupBox1";
-            // 
-            // radGridView1
-            // 
-            this.radGridView1.Location = new System.Drawing.Point(6, 122);
-            // 
-            // 
-            // 
-            this.radGridView1.MasterTemplate.ViewDefinition = tableViewDefinition1;
-            this.radGridView1.Name = "radGridView1";
-            this.radGridView1.Size = new System.Drawing.Size(1422, 437);
-            this.radGridView1.TabIndex = 0;
             // 
             // toolStrip1
             // 
             this.toolStrip1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(52)))), ((int)(((byte)(78)))));
-            this.toolStrip1.ImageScalingSize = new System.Drawing.Size(32, 32);
+            this.toolStrip1.ImageScalingSize = new System.Drawing.Size(40, 40);
             this.toolStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.btnAgregar,
-            this.btnEliminarUsuario,
-            this.btnDesactivar});
-            this.toolStrip1.Location = new System.Drawing.Point(0, 0);
+            this.btnGuardar,
+            this.btnCambiaEstado,
+            this.btnEliminarUsuario});
+            this.toolStrip1.Location = new System.Drawing.Point(2, 2);
             this.toolStrip1.Name = "toolStrip1";
-            this.toolStrip1.Size = new System.Drawing.Size(1284, 39);
+            this.toolStrip1.Size = new System.Drawing.Size(1280, 51);
             this.toolStrip1.TabIndex = 1;
             this.toolStrip1.Text = "toolStrip1";
             // 
@@ -120,8 +112,31 @@
             this.btnAgregar.Image = ((System.Drawing.Image)(resources.GetObject("btnAgregar.Image")));
             this.btnAgregar.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.btnAgregar.Name = "btnAgregar";
-            this.btnAgregar.Size = new System.Drawing.Size(36, 36);
-            this.btnAgregar.Text = "toolStripButton1";
+            this.btnAgregar.Padding = new System.Windows.Forms.Padding(2);
+            this.btnAgregar.Size = new System.Drawing.Size(48, 48);
+            this.btnAgregar.Text = "Agregar Empleado";
+            // 
+            // btnGuardar
+            // 
+            this.btnGuardar.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.btnGuardar.Image = ((System.Drawing.Image)(resources.GetObject("btnGuardar.Image")));
+            this.btnGuardar.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.btnGuardar.Name = "btnGuardar";
+            this.btnGuardar.Padding = new System.Windows.Forms.Padding(2);
+            this.btnGuardar.Size = new System.Drawing.Size(48, 48);
+            this.btnGuardar.Text = "Guardar Empleado";
+            this.btnGuardar.Click += new System.EventHandler(this.btnGuardar_Click);
+            // 
+            // btnCambiaEstado
+            // 
+            this.btnCambiaEstado.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.btnCambiaEstado.Image = ((System.Drawing.Image)(resources.GetObject("btnCambiaEstado.Image")));
+            this.btnCambiaEstado.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.btnCambiaEstado.Name = "btnCambiaEstado";
+            this.btnCambiaEstado.Padding = new System.Windows.Forms.Padding(2);
+            this.btnCambiaEstado.Size = new System.Drawing.Size(48, 48);
+            this.btnCambiaEstado.Text = "Cambiar Estado";
+            this.btnCambiaEstado.Click += new System.EventHandler(this.btnCambiaEstado_Click);
             // 
             // btnEliminarUsuario
             // 
@@ -129,17 +144,21 @@
             this.btnEliminarUsuario.Image = ((System.Drawing.Image)(resources.GetObject("btnEliminarUsuario.Image")));
             this.btnEliminarUsuario.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.btnEliminarUsuario.Name = "btnEliminarUsuario";
-            this.btnEliminarUsuario.Size = new System.Drawing.Size(36, 36);
-            this.btnEliminarUsuario.Text = "toolStripButton1";
+            this.btnEliminarUsuario.Padding = new System.Windows.Forms.Padding(2);
+            this.btnEliminarUsuario.Size = new System.Drawing.Size(48, 48);
+            this.btnEliminarUsuario.Text = "Eliminar Empleado";
+            this.btnEliminarUsuario.Click += new System.EventHandler(this.btnEliminarUsuario_Click);
             // 
-            // btnDesactivar
+            // radGridView1
             // 
-            this.btnDesactivar.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.btnDesactivar.Image = ((System.Drawing.Image)(resources.GetObject("btnDesactivar.Image")));
-            this.btnDesactivar.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.btnDesactivar.Name = "btnDesactivar";
-            this.btnDesactivar.Size = new System.Drawing.Size(36, 36);
-            this.btnDesactivar.Text = "toolStripButton1";
+            this.radGridView1.Location = new System.Drawing.Point(6, 214);
+            // 
+            // 
+            // 
+            this.radGridView1.MasterTemplate.ViewDefinition = tableViewDefinition1;
+            this.radGridView1.Name = "radGridView1";
+            this.radGridView1.Size = new System.Drawing.Size(1268, 150);
+            this.radGridView1.TabIndex = 1;
             // 
             // Frm_Empleados
             // 
@@ -151,14 +170,16 @@
             this.Controls.Add(this.tabPrincipal);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.SizableToolWindow;
             this.Name = "Frm_Empleados";
+            this.Padding = new System.Windows.Forms.Padding(2);
             this.Text = "Frm_Empleados";
+            this.Load += new System.EventHandler(this.Frm_Empleados_Load);
             this.tabPrincipal.ResumeLayout(false);
-            this.tabPInformacion.ResumeLayout(false);
-            this.groupBox1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.radGridView1.MasterTemplate)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.radGridView1)).EndInit();
+            this.tabPFiltros.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.radPanel1)).EndInit();
             this.toolStrip1.ResumeLayout(false);
             this.toolStrip1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.radGridView1.MasterTemplate)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.radGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -171,9 +192,10 @@
         private System.Windows.Forms.TabPage tabPInformacion;
         private System.Windows.Forms.ToolStrip toolStrip1;
         private System.Windows.Forms.ToolStripButton btnAgregar;
-        private System.Windows.Forms.GroupBox groupBox1;
-        private Telerik.WinControls.UI.RadGridView radGridView1;
         private System.Windows.Forms.ToolStripButton btnEliminarUsuario;
-        private System.Windows.Forms.ToolStripButton btnDesactivar;
+        private System.Windows.Forms.ToolStripButton btnGuardar;
+        private System.Windows.Forms.ToolStripButton btnCambiaEstado;
+        private Telerik.WinControls.UI.RadPanel radPanel1;
+        private Telerik.WinControls.UI.RadGridView radGridView1;
     }
 }

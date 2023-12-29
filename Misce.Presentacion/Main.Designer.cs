@@ -47,9 +47,10 @@
             this.tstrpUsuario,
             this.toolStripStatusLabel1,
             this.sstripTipoUsuario});
-            this.stusMain.Location = new System.Drawing.Point(0, 491);
+            this.stusMain.Location = new System.Drawing.Point(0, 609);
             this.stusMain.Name = "stusMain";
-            this.stusMain.Size = new System.Drawing.Size(1194, 22);
+            this.stusMain.Padding = new System.Windows.Forms.Padding(1, 0, 19, 0);
+            this.stusMain.Size = new System.Drawing.Size(1370, 22);
             this.stusMain.TabIndex = 2;
             this.stusMain.Text = "StatusStrip";
             // 
@@ -93,19 +94,22 @@
             this.fileMenu});
             this.mnuMain.Location = new System.Drawing.Point(0, 0);
             this.mnuMain.Name = "mnuMain";
-            this.mnuMain.Size = new System.Drawing.Size(1194, 24);
+            this.mnuMain.Padding = new System.Windows.Forms.Padding(8, 2, 0, 2);
+            this.mnuMain.Size = new System.Drawing.Size(1370, 24);
             this.mnuMain.TabIndex = 0;
             this.mnuMain.Text = "MenuStrip";
             // 
             // Main
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1194, 513);
+            this.ClientSize = new System.Drawing.Size(1370, 631);
             this.Controls.Add(this.stusMain);
             this.Controls.Add(this.mnuMain);
+            this.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.IsMdiContainer = true;
             this.MainMenuStrip = this.mnuMain;
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "Main";
             this.Text = "Main";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
