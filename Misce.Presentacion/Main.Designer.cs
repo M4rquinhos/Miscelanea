@@ -37,7 +37,6 @@
             this.fileMenu = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripEmpleados = new System.Windows.Forms.ToolStripMenuItem();
             this.mnuMain = new System.Windows.Forms.MenuStrip();
-            this.windows7Theme1 = new Telerik.WinControls.Themes.Windows7Theme();
             this.stusMain.SuspendLayout();
             this.mnuMain.SuspendLayout();
             this.SuspendLayout();
@@ -129,7 +128,6 @@
         private System.Windows.Forms.ToolStripStatusLabel toolStripStatusLabel1;
         private System.Windows.Forms.ToolStripStatusLabel sstripTipoUsuario;
         private System.Windows.Forms.ToolStripMenuItem toolStripEmpleados;
-        private Telerik.WinControls.Themes.Windows7Theme windows7Theme1;
     }
 }
 
