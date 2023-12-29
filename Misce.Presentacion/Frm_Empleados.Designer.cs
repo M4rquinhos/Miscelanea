@@ -28,31 +28,33 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Frm_Empleados));
             Telerik.WinControls.UI.TableViewDefinition tableViewDefinition1 = new Telerik.WinControls.UI.TableViewDefinition();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Frm_Empleados));
             this.tabPrincipal = new System.Windows.Forms.TabControl();
             this.tabPFiltros = new System.Windows.Forms.TabPage();
             this.tabPInformacion = new System.Windows.Forms.TabPage();
-            this.toolStrip1 = new System.Windows.Forms.ToolStrip();
-            this.tsbAgregar = new System.Windows.Forms.ToolStripButton();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.radGridView1 = new Telerik.WinControls.UI.RadGridView();
+            this.toolStrip1 = new System.Windows.Forms.ToolStrip();
+            this.btnAgregar = new System.Windows.Forms.ToolStripButton();
+            this.btnEliminarUsuario = new System.Windows.Forms.ToolStripButton();
+            this.btnDesactivar = new System.Windows.Forms.ToolStripButton();
             this.tabPrincipal.SuspendLayout();
             this.tabPInformacion.SuspendLayout();
-            this.toolStrip1.SuspendLayout();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.radGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.radGridView1.MasterTemplate)).BeginInit();
+            this.toolStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // tabPrincipal
             // 
             this.tabPrincipal.Controls.Add(this.tabPFiltros);
             this.tabPrincipal.Controls.Add(this.tabPInformacion);
-            this.tabPrincipal.Location = new System.Drawing.Point(1, 42);
+            this.tabPrincipal.Location = new System.Drawing.Point(1, 75);
             this.tabPrincipal.Name = "tabPrincipal";
             this.tabPrincipal.SelectedIndex = 0;
-            this.tabPrincipal.Size = new System.Drawing.Size(1457, 604);
+            this.tabPrincipal.Size = new System.Drawing.Size(1457, 571);
             this.tabPrincipal.TabIndex = 0;
             // 
             // tabPFiltros
@@ -60,7 +62,7 @@
             this.tabPFiltros.Location = new System.Drawing.Point(4, 22);
             this.tabPFiltros.Name = "tabPFiltros";
             this.tabPFiltros.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPFiltros.Size = new System.Drawing.Size(1449, 491);
+            this.tabPFiltros.Size = new System.Drawing.Size(1449, 545);
             this.tabPFiltros.TabIndex = 0;
             this.tabPFiltros.Text = "Filtros";
             this.tabPFiltros.UseVisualStyleBackColor = true;
@@ -76,27 +78,6 @@
             this.tabPInformacion.Size = new System.Drawing.Size(1449, 578);
             this.tabPInformacion.TabIndex = 1;
             this.tabPInformacion.Text = "Informacion";
-            // 
-            // toolStrip1
-            // 
-            this.toolStrip1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(52)))), ((int)(((byte)(78)))));
-            this.toolStrip1.ImageScalingSize = new System.Drawing.Size(32, 32);
-            this.toolStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.tsbAgregar});
-            this.toolStrip1.Location = new System.Drawing.Point(0, 0);
-            this.toolStrip1.Name = "toolStrip1";
-            this.toolStrip1.Size = new System.Drawing.Size(1458, 39);
-            this.toolStrip1.TabIndex = 1;
-            this.toolStrip1.Text = "toolStrip1";
-            // 
-            // tsbAgregar
-            // 
-            this.tsbAgregar.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.tsbAgregar.Image = ((System.Drawing.Image)(resources.GetObject("tsbAgregar.Image")));
-            this.tsbAgregar.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.tsbAgregar.Name = "tsbAgregar";
-            this.tsbAgregar.Size = new System.Drawing.Size(36, 36);
-            this.tsbAgregar.Text = "toolStripButton1";
             // 
             // groupBox1
             // 
@@ -119,12 +100,53 @@
             this.radGridView1.Size = new System.Drawing.Size(1422, 437);
             this.radGridView1.TabIndex = 0;
             // 
+            // toolStrip1
+            // 
+            this.toolStrip1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(52)))), ((int)(((byte)(78)))));
+            this.toolStrip1.ImageScalingSize = new System.Drawing.Size(32, 32);
+            this.toolStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.btnAgregar,
+            this.btnEliminarUsuario,
+            this.btnDesactivar});
+            this.toolStrip1.Location = new System.Drawing.Point(0, 0);
+            this.toolStrip1.Name = "toolStrip1";
+            this.toolStrip1.Size = new System.Drawing.Size(1284, 39);
+            this.toolStrip1.TabIndex = 1;
+            this.toolStrip1.Text = "toolStrip1";
+            // 
+            // btnAgregar
+            // 
+            this.btnAgregar.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.btnAgregar.Image = ((System.Drawing.Image)(resources.GetObject("btnAgregar.Image")));
+            this.btnAgregar.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.btnAgregar.Name = "btnAgregar";
+            this.btnAgregar.Size = new System.Drawing.Size(36, 36);
+            this.btnAgregar.Text = "toolStripButton1";
+            // 
+            // btnEliminarUsuario
+            // 
+            this.btnEliminarUsuario.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.btnEliminarUsuario.Image = ((System.Drawing.Image)(resources.GetObject("btnEliminarUsuario.Image")));
+            this.btnEliminarUsuario.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.btnEliminarUsuario.Name = "btnEliminarUsuario";
+            this.btnEliminarUsuario.Size = new System.Drawing.Size(36, 36);
+            this.btnEliminarUsuario.Text = "toolStripButton1";
+            // 
+            // btnDesactivar
+            // 
+            this.btnDesactivar.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.btnDesactivar.Image = ((System.Drawing.Image)(resources.GetObject("btnDesactivar.Image")));
+            this.btnDesactivar.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.btnDesactivar.Name = "btnDesactivar";
+            this.btnDesactivar.Size = new System.Drawing.Size(36, 36);
+            this.btnDesactivar.Text = "toolStripButton1";
+            // 
             // Frm_Empleados
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(105)))), ((int)(((byte)(129)))));
-            this.ClientSize = new System.Drawing.Size(1458, 647);
+            this.ClientSize = new System.Drawing.Size(1284, 647);
             this.Controls.Add(this.toolStrip1);
             this.Controls.Add(this.tabPrincipal);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.SizableToolWindow;
@@ -132,11 +154,11 @@
             this.Text = "Frm_Empleados";
             this.tabPrincipal.ResumeLayout(false);
             this.tabPInformacion.ResumeLayout(false);
-            this.toolStrip1.ResumeLayout(false);
-            this.toolStrip1.PerformLayout();
             this.groupBox1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.radGridView1.MasterTemplate)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.radGridView1)).EndInit();
+            this.toolStrip1.ResumeLayout(false);
+            this.toolStrip1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -148,8 +170,10 @@
         private System.Windows.Forms.TabPage tabPFiltros;
         private System.Windows.Forms.TabPage tabPInformacion;
         private System.Windows.Forms.ToolStrip toolStrip1;
-        private System.Windows.Forms.ToolStripButton tsbAgregar;
+        private System.Windows.Forms.ToolStripButton btnAgregar;
         private System.Windows.Forms.GroupBox groupBox1;
         private Telerik.WinControls.UI.RadGridView radGridView1;
+        private System.Windows.Forms.ToolStripButton btnEliminarUsuario;
+        private System.Windows.Forms.ToolStripButton btnDesactivar;
     }
 }
