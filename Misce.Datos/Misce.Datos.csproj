@@ -51,8 +51,10 @@
       <Name>Misce.Entidades</Name>
     </ProjectReference>
   </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
-    <Folder Include="BD Scripts\" />
+    <Content Include="BD Scripts\BD_Miscelanea v2.sql" />
+    <Content Include="BD Scripts\BD_Miscelanea.sql" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
