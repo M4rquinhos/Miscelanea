@@ -28,10 +28,11 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Frm_Empleados));
             Telerik.WinControls.UI.TableViewDefinition tableViewDefinition1 = new Telerik.WinControls.UI.TableViewDefinition();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Frm_Empleados));
             this.tabPrincipal = new System.Windows.Forms.TabControl();
             this.tabPFiltros = new System.Windows.Forms.TabPage();
+            this.radGridView1 = new Telerik.WinControls.UI.RadGridView();
             this.radPanel1 = new Telerik.WinControls.UI.RadPanel();
             this.tabPInformacion = new System.Windows.Forms.TabPage();
             this.toolStrip1 = new System.Windows.Forms.ToolStrip();
@@ -39,13 +40,12 @@
             this.btnGuardar = new System.Windows.Forms.ToolStripButton();
             this.btnCambiaEstado = new System.Windows.Forms.ToolStripButton();
             this.btnEliminarUsuario = new System.Windows.Forms.ToolStripButton();
-            this.radGridView1 = new Telerik.WinControls.UI.RadGridView();
             this.tabPrincipal.SuspendLayout();
             this.tabPFiltros.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.radPanel1)).BeginInit();
-            this.toolStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.radGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.radGridView1.MasterTemplate)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.radPanel1)).BeginInit();
+            this.toolStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // tabPrincipal
@@ -56,7 +56,7 @@
             this.tabPrincipal.Location = new System.Drawing.Point(1, 75);
             this.tabPrincipal.Name = "tabPrincipal";
             this.tabPrincipal.SelectedIndex = 0;
-            this.tabPrincipal.Size = new System.Drawing.Size(1457, 571);
+            this.tabPrincipal.Size = new System.Drawing.Size(1159, 538);
             this.tabPrincipal.TabIndex = 0;
             // 
             // tabPFiltros
@@ -67,16 +67,27 @@
             this.tabPFiltros.Location = new System.Drawing.Point(4, 25);
             this.tabPFiltros.Name = "tabPFiltros";
             this.tabPFiltros.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPFiltros.Size = new System.Drawing.Size(1449, 542);
+            this.tabPFiltros.Size = new System.Drawing.Size(1151, 509);
             this.tabPFiltros.TabIndex = 0;
             this.tabPFiltros.Text = "Busqueda";
+            // 
+            // radGridView1
+            // 
+            this.radGridView1.Location = new System.Drawing.Point(6, 183);
+            // 
+            // 
+            // 
+            this.radGridView1.MasterTemplate.ViewDefinition = tableViewDefinition1;
+            this.radGridView1.Name = "radGridView1";
+            this.radGridView1.Size = new System.Drawing.Size(1139, 320);
+            this.radGridView1.TabIndex = 1;
             // 
             // radPanel1
             // 
             this.radPanel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(215)))), ((int)(((byte)(90)))));
-            this.radPanel1.Location = new System.Drawing.Point(70, 29);
+            this.radPanel1.Location = new System.Drawing.Point(6, 29);
             this.radPanel1.Name = "radPanel1";
-            this.radPanel1.Size = new System.Drawing.Size(641, 162);
+            this.radPanel1.Size = new System.Drawing.Size(1139, 134);
             this.radPanel1.TabIndex = 0;
             this.radPanel1.ThemeName = "ControlDefault";
             // 
@@ -102,7 +113,7 @@
             this.btnEliminarUsuario});
             this.toolStrip1.Location = new System.Drawing.Point(2, 2);
             this.toolStrip1.Name = "toolStrip1";
-            this.toolStrip1.Size = new System.Drawing.Size(1280, 51);
+            this.toolStrip1.Size = new System.Drawing.Size(1158, 51);
             this.toolStrip1.TabIndex = 1;
             this.toolStrip1.Text = "toolStrip1";
             // 
@@ -149,23 +160,12 @@
             this.btnEliminarUsuario.Text = "Eliminar Empleado";
             this.btnEliminarUsuario.Click += new System.EventHandler(this.btnEliminarUsuario_Click);
             // 
-            // radGridView1
-            // 
-            this.radGridView1.Location = new System.Drawing.Point(6, 214);
-            // 
-            // 
-            // 
-            this.radGridView1.MasterTemplate.ViewDefinition = tableViewDefinition1;
-            this.radGridView1.Name = "radGridView1";
-            this.radGridView1.Size = new System.Drawing.Size(1268, 150);
-            this.radGridView1.TabIndex = 1;
-            // 
             // Frm_Empleados
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(105)))), ((int)(((byte)(129)))));
-            this.ClientSize = new System.Drawing.Size(1284, 647);
+            this.ClientSize = new System.Drawing.Size(1162, 610);
             this.Controls.Add(this.toolStrip1);
             this.Controls.Add(this.tabPrincipal);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.SizableToolWindow;
@@ -175,11 +175,11 @@
             this.Load += new System.EventHandler(this.Frm_Empleados_Load);
             this.tabPrincipal.ResumeLayout(false);
             this.tabPFiltros.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.radGridView1.MasterTemplate)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.radGridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.radPanel1)).EndInit();
             this.toolStrip1.ResumeLayout(false);
             this.toolStrip1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.radGridView1.MasterTemplate)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.radGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
