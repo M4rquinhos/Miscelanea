@@ -143,7 +143,9 @@ CREATE TABLE Credito(
 	Fecha_Inicio DATE NOT NULL,
 	Fecha_Limite DATE DEFAULT(GETDATE()) NOT NULL,
 	Fecha_Pago DATE NOT NULL,
-	Id_EstadoCredito INT NOT NULL
+	Id_EstadoCredito INT NOT NULL,
+	FOREIGN KEY (Id_Cliente) REFERENCES Cliente (Id_Cliente),
+	FOREIGN KEY (Id_Venta) REFERENCES Venta (Id_Venta),
 );
 -----------------------------------
 
