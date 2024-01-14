@@ -55,7 +55,6 @@
   <ItemGroup>
     <Content Include="BD Scripts\BD_Miscelanea v2.sql" />
     <Content Include="BD Scripts\BD_Miscelanea.sql" />
-    <Content Include="BD Scripts\Inserts.sql" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
