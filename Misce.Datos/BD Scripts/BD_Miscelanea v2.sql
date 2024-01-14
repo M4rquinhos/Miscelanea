@@ -140,10 +140,10 @@ CREATE TABLE Credito(
 	Id_Credito INT PRIMARY KEY IDENTITY (1, 1) NOT NULL,
 	Id_Cliente INT NOT NULL,
 	Id_Venta INT NOT NULL,
-	Fecha_Compra DATE DEFAULT (GETDATE()),
 	Fecha_Inicio DATE NOT NULL,
+	Fecha_Limite DATE DEFAULT(GETDATE()) NOT NULL,
 	Fecha_Pago DATE NOT NULL,
-	Id_EstadoCredito INT NOT NULL,
+	Id_EstadoCredito INT NOT NULL
 );
 -----------------------------------
 
