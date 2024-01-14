@@ -43,9 +43,11 @@ CREATE TABLE Sucursal(
 	Nombre VARCHAR(100) NOT NULL,
 	Direccion VARCHAR(250) NOT NULL,
 	Fecha_Alta DATE DEFAULT (GETDATE()) NOT NULL,
-	Id_Ciudad INT, --Llave foranea
+	Id_Colonia INT NOT NULL,
+	Id_Ciudad INT NOT NULL, --Llave foranea
 	Estado BIT DEFAULT(1),
-	FOREIGN KEY (Id_Ciudad) REFERENCES Ciudad (Id_Ciudad)
+	FOREIGN KEY (Id_Ciudad) REFERENCES Ciudad (Id_Ciudad),
+	FOREIGN KEY (Id_Colonia) REFERENCES Colonia (Id_Colonia)
 );
 
 CREATE TABLE Usuario(
