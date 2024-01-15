@@ -28,17 +28,17 @@
         /// </summary>
         private void InitializeComponent()
         {
-            Telerik.WinControls.UI.TableViewDefinition tableViewDefinition2 = new Telerik.WinControls.UI.TableViewDefinition();
+            Telerik.WinControls.UI.TableViewDefinition tableViewDefinition3 = new Telerik.WinControls.UI.TableViewDefinition();
             this.tabPrincipal = new System.Windows.Forms.TabControl();
             this.tabPFiltros = new System.Windows.Forms.TabPage();
-            this.radGridView1 = new Telerik.WinControls.UI.RadGridView();
+            this.dtgvCategorias = new Telerik.WinControls.UI.RadGridView();
             this.radPanel1 = new Telerik.WinControls.UI.RadPanel();
             this.tabPInformacion = new System.Windows.Forms.TabPage();
             this.toolStrip1 = new System.Windows.Forms.ToolStrip();
             this.tabPrincipal.SuspendLayout();
             this.tabPFiltros.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.radGridView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.radGridView1.MasterTemplate)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dtgvCategorias)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dtgvCategorias.MasterTemplate)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.radPanel1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -56,7 +56,7 @@
             // tabPFiltros
             // 
             this.tabPFiltros.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(203)))), ((int)(((byte)(218)))), ((int)(((byte)(213)))));
-            this.tabPFiltros.Controls.Add(this.radGridView1);
+            this.tabPFiltros.Controls.Add(this.dtgvCategorias);
             this.tabPFiltros.Controls.Add(this.radPanel1);
             this.tabPFiltros.Location = new System.Drawing.Point(4, 25);
             this.tabPFiltros.Name = "tabPFiltros";
@@ -65,16 +65,16 @@
             this.tabPFiltros.TabIndex = 0;
             this.tabPFiltros.Text = "Busqueda";
             // 
-            // radGridView1
+            // dtgvCategorias
             // 
-            this.radGridView1.Location = new System.Drawing.Point(6, 183);
+            this.dtgvCategorias.Location = new System.Drawing.Point(6, 183);
             // 
             // 
             // 
-            this.radGridView1.MasterTemplate.ViewDefinition = tableViewDefinition2;
-            this.radGridView1.Name = "radGridView1";
-            this.radGridView1.Size = new System.Drawing.Size(1139, 320);
-            this.radGridView1.TabIndex = 1;
+            this.dtgvCategorias.MasterTemplate.ViewDefinition = tableViewDefinition3;
+            this.dtgvCategorias.Name = "dtgvCategorias";
+            this.dtgvCategorias.Size = new System.Drawing.Size(1139, 320);
+            this.dtgvCategorias.TabIndex = 1;
             // 
             // radPanel1
             // 
@@ -121,8 +121,8 @@
             this.Load += new System.EventHandler(this.Frm_Categorias_Load);
             this.tabPrincipal.ResumeLayout(false);
             this.tabPFiltros.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.radGridView1.MasterTemplate)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.radGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dtgvCategorias.MasterTemplate)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dtgvCategorias)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.radPanel1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -136,6 +136,6 @@
         private System.Windows.Forms.TabPage tabPInformacion;
         private System.Windows.Forms.ToolStrip toolStrip1;
         private Telerik.WinControls.UI.RadPanel radPanel1;
-        private Telerik.WinControls.UI.RadGridView radGridView1;
+        private Telerik.WinControls.UI.RadGridView dtgvCategorias;
     }
 }

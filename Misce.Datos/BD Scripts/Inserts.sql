@@ -24,3 +24,14 @@
 --INSERT INTO Sucursal (Nombre, Direccion, Id_Colonia, Id_Ciudad) VALUES
 --('SUCURSAL MATRIZ', 'Calle 18 andador 23 #317', 1, 1),
 --('SUCURSAL FALCON CENTRO', '', 2, 2);
+
+INSERT INTO Usuario 
+(
+Nombre, Apellido_Paterno, Apellido_Materno, Nombre_Usuario, Clave, Correo, Telefono, Fecha_Nacimiento,
+Id_TipoUsuario, Id_Sucursal
+) 
+VALUES
+(
+'David', 'De Lara', 'Garcia', 'Deivid', HASHBYTES('SHA2_256', '87654321'), 'deivid@gmail.com', '8711121143',
+'1999-07-11', 2, 2 
+)

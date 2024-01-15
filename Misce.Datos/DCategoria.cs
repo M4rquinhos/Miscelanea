@@ -1,27 +1,23 @@
-﻿using Misce.Entidades;
-using System;
+﻿using System;
 using System.Data;
 using System.Data.SqlClient;
 
 namespace Misce.Datos
 {
-    public class DUsuario
+    public class DCategoria
     {
-        public EUsuario usuario = new EUsuario();
-
-        public DataTable Acceder(string usuario, string clave)
+        public DataTable ListarCategorias(int estado)
         {
             DataTable tabla = new DataTable();
             try
             {
-                using (SqlConnection sqlCon = Conexion.GetInstancia().CrearConexion())
+                using (SqlConnection Sqlcon = Conexion.GetInstancia().CrearConexion())
                 {
-                    using (SqlCommand cmd = new SqlCommand("sp_LogIn", sqlCon))
+                    using (SqlCommand cmd = new SqlCommand("sp_ListarCategorias", Sqlcon))
                     {
                         cmd.CommandType = CommandType.StoredProcedure;
-                        cmd.Parameters.Add("@usuario", SqlDbType.VarChar).Value = usuario;
-                        cmd.Parameters.Add("@clave", SqlDbType.VarChar).Value = clave;
-                        sqlCon.Open();
+                        cmd.Parameters.Add("@estado", SqlDbType.Int).Value = estado;
+                        Sqlcon.Open();
                         using (SqlDataReader resultado = cmd.ExecuteReader())
                         {
                             tabla.Load(resultado);
@@ -32,7 +28,6 @@ namespace Misce.Datos
             }
             catch (Exception ex)
             {
-                return null;
                 throw ex;
             }
         }
