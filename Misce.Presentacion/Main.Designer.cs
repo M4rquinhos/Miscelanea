@@ -37,6 +37,9 @@
             this.fileMenu = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripEmpleados = new System.Windows.Forms.ToolStripMenuItem();
             this.mnuMain = new System.Windows.Forms.MenuStrip();
+            this.productosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.ToolStripCategorias = new System.Windows.Forms.ToolStripMenuItem();
+            this.ToolStripListaProductos = new System.Windows.Forms.ToolStripMenuItem();
             this.stusMain.SuspendLayout();
             this.mnuMain.SuspendLayout();
             this.SuspendLayout();
@@ -78,19 +81,20 @@
             this.toolStripEmpleados});
             this.fileMenu.ImageTransparentColor = System.Drawing.SystemColors.ActiveBorder;
             this.fileMenu.Name = "fileMenu";
-            this.fileMenu.Size = new System.Drawing.Size(72, 20);
-            this.fileMenu.Text = "Catalogos";
+            this.fileMenu.Size = new System.Drawing.Size(77, 20);
+            this.fileMenu.Text = "Empleados";
             // 
             // toolStripEmpleados
             // 
             this.toolStripEmpleados.Name = "toolStripEmpleados";
-            this.toolStripEmpleados.Size = new System.Drawing.Size(132, 22);
-            this.toolStripEmpleados.Text = "Empleados";
+            this.toolStripEmpleados.Size = new System.Drawing.Size(180, 22);
+            this.toolStripEmpleados.Text = "Lista de Empleados";
             this.toolStripEmpleados.Click += new System.EventHandler(this.toolStripEmpleados_Click);
             // 
             // mnuMain
             // 
             this.mnuMain.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.productosToolStripMenuItem,
             this.fileMenu});
             this.mnuMain.Location = new System.Drawing.Point(0, 0);
             this.mnuMain.Name = "mnuMain";
@@ -98,6 +102,27 @@
             this.mnuMain.Size = new System.Drawing.Size(1370, 24);
             this.mnuMain.TabIndex = 0;
             this.mnuMain.Text = "MenuStrip";
+            // 
+            // productosToolStripMenuItem
+            // 
+            this.productosToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.ToolStripCategorias,
+            this.ToolStripListaProductos});
+            this.productosToolStripMenuItem.Name = "productosToolStripMenuItem";
+            this.productosToolStripMenuItem.Size = new System.Drawing.Size(73, 20);
+            this.productosToolStripMenuItem.Text = "Productos";
+            // 
+            // ToolStripCategorias
+            // 
+            this.ToolStripCategorias.Name = "ToolStripCategorias";
+            this.ToolStripCategorias.Size = new System.Drawing.Size(180, 22);
+            this.ToolStripCategorias.Text = "Categorias";
+            // 
+            // ToolStripListaProductos
+            // 
+            this.ToolStripListaProductos.Name = "ToolStripListaProductos";
+            this.ToolStripListaProductos.Size = new System.Drawing.Size(180, 22);
+            this.ToolStripListaProductos.Text = "Lista de Productos";
             // 
             // Main
             // 
@@ -109,7 +134,7 @@
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.IsMdiContainer = true;
             this.MainMenuStrip = this.mnuMain;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Main";
             this.Text = "Main";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
@@ -133,6 +158,9 @@
         private System.Windows.Forms.ToolStripStatusLabel toolStripStatusLabel1;
         private System.Windows.Forms.ToolStripStatusLabel sstripTipoUsuario;
         private System.Windows.Forms.ToolStripMenuItem toolStripEmpleados;
+        private System.Windows.Forms.ToolStripMenuItem productosToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem ToolStripCategorias;
+        private System.Windows.Forms.ToolStripMenuItem ToolStripListaProductos;
     }
 }
 
